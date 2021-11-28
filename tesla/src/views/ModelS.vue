@@ -42,8 +42,8 @@
 }
 
 #model__s{
-  height: 830px !important;
-  margin-top: -60px !important;
+  height: 1000px !important;
+  margin-top: -70px !important;
   width:100%;
   object-fit: cover;
   z-index: 2;
@@ -58,15 +58,15 @@
 
 #header h1{
     position: absolute;
-    top: -750px;
+    top: -850px;
     color: black;
     font-size: 55px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #header p{
     position: absolute;
-    top: -680px;
+    top: -790px;
     font-size: 20px;
 }
 
@@ -114,6 +114,7 @@
 }
 
 #inside{
+
     width:100%;
     object-fit: cover;
     margin-top: -28px;

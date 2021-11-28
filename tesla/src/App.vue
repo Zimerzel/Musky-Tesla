@@ -108,21 +108,21 @@ nav{
 
 #tesla__logo{
 position: absolute;
-width:150px;
+width:180px;
 z-index: 1;
-top: 22px;
-left: 60px;
+top: 30px;
+left: 70px;
 }
 
 #router__link{
   font-size: 1rem;
   margin-left:40px;
-  margin-top: 10px;
+  padding-top: 20px;
   color: black;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 
