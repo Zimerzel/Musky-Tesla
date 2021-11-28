@@ -2,17 +2,17 @@
   <div id="app">
       <header id="header">
         <div class="impact__report">
-        <router-link to="/Impact"><p>Read Tesla's 2020 Impact</p></router-link>
+        <!-- <router-link to="/Impact"><p>Read Tesla's 2020 Impact</p></router-link> -->
         </div>
+        <svg id="tesla__logo" class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z" fill="var(--tds-icon--fill, #171a20)"></path></svg>
           <div id="nav">
             <b-navbar toggleable="lg">
-              <b-navbar-brand href="#"> <svg id="tesla__logo" class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z" fill="var(--tds-icon--fill, #171a20)"></path></svg></b-navbar-brand>
+              <b-navbar-brand href="#"> </b-navbar-brand>
 
               <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
               <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                  <router-link to="/" id="router__link">Home</router-link>
                   <router-link to="/Model-S" id="router__link">Model S</router-link>
                   <router-link to="/Model-3" id="router__link">Model 3</router-link>
                   <router-link to="/Model-X" id="router__link">Model X</router-link>
@@ -22,7 +22,7 @@
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
-                <b-navbar-nav class="ml-auto">
+                <b-navbar-nav class="ml-auto" id="side__nav">
                   <b-nav-item-dropdown text="Shop" right>
                     <b-dropdown-item href="#">EN</b-dropdown-item>
                     <b-dropdown-item href="#">ES</b-dropdown-item>
@@ -74,7 +74,15 @@ header{
 }
 
 #nav{
-  margin-top: 80px !important;
+  margin-top: -60px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#side__nav{
+  position: absolute;
+  top: 10px;
+  right:-25vw;
 }
 
 nav{
@@ -82,40 +90,39 @@ nav{
 }
 
 #nav-collapse{
-  margin-left: 25%;
+  /* display: flex; */
+  justify-content: start;
+  text-align: center;
 }
 
 .bg-info{
   background-color: black transparent !important;
 }
 
-.impact__report p{
+/* .impact__report p{
   margin-top: -45px;
   margin-bottom: -65px !important;
   text-decoration: underline;
   color: #2c3e50;
-}
+} */
 
 #tesla__logo{
-width:120px;
-position:absolute;
-top: 22px;
-left: 50px;
+position: absolute;
+width:150px;
 z-index: 1;
-}
-
-#header__nav{
-  position: absolute;
-  top: 40px;
-  left: 30%;
-  z-index:1;
+top: 22px;
+left: 60px;
 }
 
 #router__link{
   font-size: 1rem;
-  margin:10px;
+  margin-left:40px;
+  margin-top: 10px;
   color: black;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
 

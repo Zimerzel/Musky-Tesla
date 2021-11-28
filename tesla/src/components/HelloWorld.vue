@@ -40,6 +40,7 @@ top: 80%;
 right: 28%;
 }
 
+
 .hello h1, .hello p{
   position: absolute;
   justify-content: center !important;
